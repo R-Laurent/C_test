@@ -2,13 +2,18 @@
 #include<stdlib.h>
 #include<math.h>
 int main(){
-    int vies = 1;
-    int nourriture = 4;
-    int achat = 0;
-    printf("bonjour vous avez %d vie(s), vous avez %d nourritures \n\n",vies,nourriture);
-    printf("quel quantité voulez vous achter ? ");
-    scanf("%d",&achat);
-    nourriture = nourriture + achat;
-    printf("vous avez maintenant %d nourriture \n\n",nourriture);
+    int age;
+    printf("donnez votre age ");
+    scanf("%d",&age);
+    if (age >= 18)
+    {
+        printf("vous etes majeur !! \n");
+    }
+    else
+    {
+        printf("vous êtes mineur \n");
+    }
+    
+    
     return 0;
 }
