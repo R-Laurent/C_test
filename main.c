@@ -3,14 +3,34 @@
 #include<math.h>
 #include<time.h>
 double rectangle(double largeur, double hauteur);
+void triplePointeur(int *pointeur);
+void printElement(int* tableau, int taille);
 
 int main(){
     printf("\n\n");
-    printf("aire du rectangle : %f\n",rectangle(5,10));
-    printf("\n");
-   return 0;
+    int taille = 10;
+    int index = 0;
+    int tableau[10] = {0};
+    tableau[0]=1;
+    printElement(tableau,taille);
+    //printf("%d \n",tableau[index]);
+    printf("\n\n");
+    return 0;
+}
+
+void printElement(int* tableau, int taille){
+    int i =0;
+    for ( i = 0; i < taille; i++)
+    {
+        printf("%d \n",tableau[i]);
+    }
+    
 }
 
 double rectangle(double largeur, double hauteur){
     return largeur * hauteur;
+}
+
+void triplePointeur(int *pointeur){
+    *pointeur *= 3;
 }
