@@ -9,10 +9,13 @@ void printElement(int* tableau, int taille);
 int main(){
     printf("\n\n");
     int taille = 10;
+    int *adresse = &taille;
     int index = 0;
     int tableau[10] = {0};
     tableau[0]=1;
     printElement(tableau,taille);
+    printf("adresse : %p \n", adresse);
+    printf("contenu de l'adresse : %d \n",*adresse);
     //printf("%d \n",tableau[index]);
     printf("\n\n");
     return 0;
